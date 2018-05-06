@@ -22,10 +22,19 @@ pipeline {
         }
       }
     }
-    stage('') {
-      steps {
-        sh 'ls'
-        sh 'pwd'
+    stage('error') {
+      parallel {
+        stage('error') {
+          steps {
+            sh 'ls'
+            sh 'pwd'
+          }
+        }
+        stage('test2') {
+          steps {
+            sh 'ls'
+          }
+        }
       }
     }
   }
