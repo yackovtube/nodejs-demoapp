@@ -33,3 +33,10 @@ Start the Application:
 ```
 npm start
 ```
+
+
+create zip file
+```
+
+npm run build
+```
