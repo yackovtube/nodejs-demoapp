@@ -7,12 +7,6 @@ pipeline {
           steps {
             pwd()
             sh 'ls'
-            sh 'ls'
-          }
-        }
-        stage('1') {
-          steps {
-            sh 'ls'
           }
         }
         stage('2') {
